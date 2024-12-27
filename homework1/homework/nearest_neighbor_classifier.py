@@ -15,6 +15,7 @@ class NearestNeighborClassifier:
             x: list of lists of floats, data
             y: list of floats, labels
         """
+        
         self.data, self.label = self.make_data(x, y)
         self.data_mean, self.data_std = self.compute_data_statistics(self.data)
         self.data_normalized = self.input_normalization(self.data)
